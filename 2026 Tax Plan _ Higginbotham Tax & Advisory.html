@@ -1,91 +1,675 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2113.65">
-  <style type="text/css">
-    body {background-color: #f1f4f1}
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 18.9px; font: 12.6px Georgia; color: #14362a; -webkit-text-stroke: #14362a}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 18.0px; font: 12.0px 'Helvetica Neue'; color: #44504a; -webkit-text-stroke: #44504a; min-height: 14.0px}
-    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 22.5px; font: 15.0px 'Helvetica Neue'; color: #44504a; -webkit-text-stroke: #44504a; min-height: 17.0px}
-    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 17.1px; font: 11.4px 'Helvetica Neue'; color: #44504a; -webkit-text-stroke: #44504a}
-    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 31.5px; font: 21.0px Georgia; color: #151b18; -webkit-text-stroke: #151b18; min-height: 24.0px}
-    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 16.6px; font: 11.0px 'Helvetica Neue'; color: #44504a; -webkit-text-stroke: #44504a; min-height: 12.0px}
-    p.p8 {margin: 0.0px 0.0px 11.8px 0.0px; line-height: 17.6px; font: 11.8px 'Helvetica Neue'; color: #44504a; -webkit-text-stroke: #44504a; min-height: 14.0px}
-    p.p10 {margin: 0.0px 0.0px 24.0px 0.0px; line-height: 20.2px; font: 13.5px 'Helvetica Neue'; color: #44504a; -webkit-text-stroke: #44504a}
-    p.p11 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 20.2px; font: 13.5px 'Helvetica Neue'; color: #151b18; -webkit-text-stroke: #151b18; min-height: 16.0px}
-    p.p12 {margin: 0.0px 0.0px 10.6px 0.0px; line-height: 15.8px; font: 10.6px 'Helvetica Neue'; color: #44504a; -webkit-text-stroke: #44504a; min-height: 12.0px}
-    p.p13 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 19.8px; font: 13.2px Georgia; color: #14362a; -webkit-text-stroke: #14362a}
-    p.p14 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 20.2px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
-    p.p16 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 18.0px; font: 12.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff}
-    p.p17 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 18.0px; font: 12.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff; min-height: 14.0px}
-    p.p18 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 34.3px; font: 31.2px Georgia; color: #ffffff; -webkit-text-stroke: #ffffff; min-height: 36.0px}
-    p.p19 {margin: 0.0px 0.0px 12.0px 0.0px; line-height: 17.6px; font: 11.8px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff; min-height: 14.0px}
-    p.p20 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 17.1px; font: 11.4px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff; background-color: #14362a}
-    p.p22 {margin: 0.0px 0.0px 11.4px 0.0px; line-height: 17.1px; font: 11.4px 'Helvetica Neue'; color: #44504a; -webkit-text-stroke: #44504a}
-    li.li21 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 20.2px; font: 13.5px 'Helvetica Neue'; color: #151b18}
-    span.s1 {font-kerning: none}
-    span.s2 {font-kerning: none; background-color: #14362a}
-    span.s3 {font: 13.5px 'Helvetica Neue'; font-kerning: none}
-    ul.ul1 {list-style-type: none}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>2026 Tax Plan | Higginbotham Tax & Advisory</title>
+<style>
+:root{
+  --bg:#F4F6F4; --surface:#FFFFFF; --ink:#1B2420; --muted:#55625C; --rule:#D3DBD6;
+  --brand:#174538; --brand-soft:#E2ECE6; --on-brand:#FFFFFF;
+  --up:#985811; --up-soft:#F3E7D6; --track:#E5EAE7; --ghost:#9AA9A2;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0F1513; --surface:#171F1C; --ink:#E4EBE7; --muted:#9BA9A2; --rule:#2B3631;
+    --brand:#80C2A5; --brand-soft:#1D312A; --on-brand:#0E1814;
+    --up:#E3A65E; --up-soft:#36291A; --track:#25302B; --ghost:#5F6E67;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0F1513; --surface:#171F1C; --ink:#E4EBE7; --muted:#9BA9A2; --rule:#2B3631;
+  --brand:#80C2A5; --brand-soft:#1D312A; --on-brand:#0E1814;
+  --up:#E3A65E; --up-soft:#36291A; --track:#25302B; --ghost:#5F6E67;
+  color-scheme:dark;
+}
+:root{ box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px); }
+html{ scroll-padding-top:env(safe-area-inset-top,0px); }
+*,*::before,*::after{ box-sizing:inherit; }
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:Calibri, Carlito, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-size:1.125rem; line-height:1.5;
+  border-top:6px solid var(--brand);
+}
+h1,h2,h3,.serif{ font-family:Georgia, "Times New Roman", serif; font-weight:normal; }
+.num{ font-variant-numeric:tabular-nums lining-nums; }
+.wrap{ max-width:60rem; margin:0 auto; padding:0 1.25rem; }
+a{ color:var(--brand); }
+:focus-visible{ outline:3px solid var(--brand); outline-offset:3px; }
+
+/* Masthead */
+.mast{ display:flex; justify-content:space-between; align-items:baseline; gap:1rem; flex-wrap:wrap; padding:1.5rem 0 0; color:var(--muted); font-size:1rem; }
+.mast .firm{ font-family:Georgia, serif; color:var(--brand); font-size:1.05rem; }
+
+/* Hero */
+.hero{ padding:3.5rem 0 2.5rem; }
+.hero h1{ font-size:clamp(2rem, 4.6vw, 3.25rem); line-height:1.12; margin:0 0 1.25rem; max-width:22ch; letter-spacing:-0.01em; }
+.hero .lede{ font-size:1.25rem; color:var(--muted); max-width:56ch; margin:0; }
+.facts{ display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); margin:2.5rem 0 0; border-top:1px solid var(--rule); }
+.facts div{ padding:1rem 1rem 0 0; }
+.facts div + div{ padding-left:1rem; border-left:1px solid var(--rule); }
+.facts dt{ font-size:0.95rem; color:var(--muted); }
+.facts dd{ margin:0.25rem 0 0; font-family:Georgia, serif; font-size:1.75rem; }
+.aside{ font-size:0.98rem; color:var(--muted); margin-top:1.25rem; max-width:64ch; }
+
+section{ padding:3rem 0; border-top:1px solid var(--rule); }
+section > h2{ font-size:1.85rem; margin:0 0 0.5rem; }
+.intro{ color:var(--muted); max-width:62ch; margin:0 0 2rem; }
+
+/* Bracket ruler */
+.ruler{ position:relative; margin:3.25rem 0 1rem; }
+.ruler-bar{ display:flex; height:3.25rem; border-radius:4px; overflow:hidden; }
+.seg{ position:relative; display:flex; align-items:flex-end; justify-content:flex-start; padding:0 0 0.35rem 0.4rem; font-size:0.85rem; color:var(--muted); background:var(--track); border-right:2px solid var(--bg); white-space:nowrap; overflow:hidden; }
+.seg.filled{ background:var(--brand-soft); color:var(--ink); }
+.seg.top{ background:var(--brand); color:var(--on-brand); }
+.marker{ position:absolute; top:-2.4rem; bottom:-0.4rem; width:0; border-left:2px solid var(--ink); transition:left .35s ease; }
+.marker span{ position:absolute; top:0; left:0; transform:translateX(-50%); background:var(--ink); color:var(--bg); font-size:0.85rem; padding:0.1rem 0.45rem; border-radius:3px; white-space:nowrap; }
+.marker.ghost{ border-left:2px dashed var(--ghost); }
+.marker.ghost span{ background:transparent; color:var(--muted); top:auto; bottom:-1.6rem; }
+.ruler-scale{ display:flex; justify-content:space-between; font-size:0.85rem; color:var(--muted); margin-top:1.9rem; }
+.ruler-note{ max-width:62ch; margin:1.25rem 0 0; }
+
+/* Waterfall */
+.wf{ margin:0; }
+.wf-row{ border-bottom:1px solid var(--rule); }
+.wf-line{ display:grid; grid-template-columns:minmax(10rem, 15rem) 1fr 6.5rem; align-items:center; gap:1rem; padding:0.7rem 0; }
+summary.wf-line{ cursor:pointer; list-style:none; }
+summary.wf-line::-webkit-details-marker{ display:none; }
+.wf-label{ display:flex; gap:0.5rem; align-items:baseline; }
+.wf-label .chev{ display:inline-block; width:0.8rem; color:var(--muted); transition:transform .2s ease; }
+details[open] .chev{ transform:rotate(90deg); }
+.wf-total .wf-label{ font-family:Georgia, serif; font-size:1.15rem; padding-left:1.3rem; }
+.wf-track{ position:relative; height:1.5rem; }
+.wf-bar{ position:absolute; top:0; bottom:0; border-radius:2px; }
+.wf-bar.total{ background:var(--brand); }
+.wf-bar.up{ background:var(--up); }
+.wf-bar.down{ background:transparent; border:2px solid var(--brand); }
+.wf-val{ text-align:right; }
+.wf-val.up{ color:var(--up); }
+.wf-val.down{ color:var(--brand); }
+.wf-detail{ padding:0 0 1.1rem 1.3rem; max-width:62ch; color:var(--muted); }
+.wf-axis{ font-size:0.88rem; color:var(--muted); margin-top:0.75rem; }
+
+.more{ margin-top:2rem; }
+.more > summary{ cursor:pointer; color:var(--brand); font-family:Georgia, serif; font-size:1.1rem; }
+.table-scroll{ overflow-x:auto; margin-top:1rem; }
+table{ border-collapse:collapse; width:100%; min-width:34rem; font-size:1rem; }
+th, td{ padding:0.5rem 0.75rem; text-align:right; border-bottom:1px solid var(--rule); }
+th:first-child, td:first-child{ text-align:left; padding-left:0; }
+thead th{ font-weight:normal; color:var(--muted); font-size:0.95rem; }
+tr.sum td{ font-weight:bold; }
+tr.grand td{ font-family:Georgia, serif; font-size:1.1rem; border-top:2px solid var(--ink); }
+
+/* Levers */
+.levers-grid{ display:grid; grid-template-columns:minmax(0,1fr) 19rem; gap:2rem; align-items:start; }
+.lever{ background:var(--surface); border:1px solid var(--rule); border-radius:6px; padding:1.4rem 1.5rem; }
+.lever + .lever{ margin-top:1rem; }
+.lever h3{ font-size:1.3rem; margin:0 0 0.25rem; }
+.lever .what{ color:var(--muted); margin:0 0 1rem; font-size:1rem; }
+.lever-control{ display:flex; align-items:center; gap:1rem; }
+.lever-control output{ min-width:6.5rem; text-align:right; font-family:Georgia, serif; font-size:1.3rem; }
+input[type=range]{ -webkit-appearance:none; appearance:none; flex:1; height:2rem; background:transparent; margin:0; cursor:pointer; }
+input[type=range]::-webkit-slider-runnable-track{ height:6px; border-radius:3px; background:linear-gradient(to right, var(--brand) var(--p,0%), var(--track) var(--p,0%)); }
+input[type=range]::-moz-range-track{ height:6px; border-radius:3px; background:var(--track); }
+input[type=range]::-moz-range-progress{ height:6px; border-radius:3px; background:var(--brand); }
+input[type=range]::-webkit-slider-thumb{ -webkit-appearance:none; width:1.4rem; height:1.4rem; border-radius:50%; background:var(--surface); border:3px solid var(--brand); margin-top:-0.5rem; }
+input[type=range]::-moz-range-thumb{ width:1.1rem; height:1.1rem; border-radius:50%; background:var(--surface); border:3px solid var(--brand); }
+.lever-scale{ display:flex; justify-content:space-between; font-size:0.85rem; color:var(--muted); margin-top:0.1rem; }
+.lever-result{ display:flex; flex-wrap:wrap; gap:0.25rem 1.5rem; align-items:baseline; margin-top:1rem; padding-top:0.9rem; border-top:1px solid var(--rule); }
+.lever-result .saves{ font-family:Georgia, serif; font-size:1.25rem; color:var(--brand); }
+.lever-result .cost{ color:var(--muted); font-size:1rem; }
+.lever .when{ font-size:0.92rem; color:var(--muted); margin:0.6rem 0 0; }
+
+.summary{ position:sticky; top:calc(env(safe-area-inset-top,0px) + 1rem); background:var(--brand); color:var(--on-brand); border-radius:6px; padding:1.5rem; }
+.summary h3{ font-size:1.25rem; margin:0 0 1rem; }
+.summary dl{ margin:0; }
+.summary .row{ display:flex; justify-content:space-between; gap:1rem; padding:0.4rem 0; border-bottom:1px solid color-mix(in srgb, var(--on-brand) 22%, transparent); font-size:1rem; }
+.summary .big{ display:block; border:none; padding:1rem 0 0.25rem; }
+.summary .big dt{ font-size:1rem; opacity:0.85; }
+.summary .big dd{ margin:0; font-family:Georgia, serif; font-size:2.6rem; line-height:1.1; }
+.summary dd{ margin:0; }
+.summary p{ font-size:0.98rem; margin:0.75rem 0 1rem; opacity:0.92; }
+.summary button{ font:inherit; font-size:0.95rem; background:transparent; color:var(--on-brand); border:1px solid currentColor; border-radius:4px; padding:0.4rem 0.8rem; cursor:pointer; }
+.summary button:focus-visible{ outline-color:var(--on-brand); }
+
+/* Payments */
+.ledger{ max-width:40rem; margin:0; }
+.ledger .row{ display:flex; justify-content:space-between; gap:1.5rem; padding:0.75rem 0; border-bottom:1px solid var(--rule); }
+.ledger dt{ max-width:30ch; }
+.ledger dt small{ display:block; color:var(--muted); font-size:0.92rem; }
+.ledger dd{ margin:0; font-family:Georgia, serif; font-size:1.25rem; white-space:nowrap; }
+.ledger .key dd{ color:var(--brand); font-size:1.5rem; }
+
+/* Steps */
+.steps{ list-style:none; padding:0; margin:0; max-width:46rem; }
+.steps li{ display:grid; grid-template-columns:11rem 1fr; gap:1.25rem; padding:1rem 0; border-bottom:1px solid var(--rule); }
+.steps .date{ font-family:Georgia, serif; color:var(--brand); }
+.steps ul{ margin:0; padding-left:1.1rem; }
+.steps ul li{ display:list-item; padding:0.15rem 0; border:none; }
+
+footer{ padding:2.5rem 0 4rem; border-top:1px solid var(--rule); color:var(--muted); font-size:0.95rem; }
+footer p{ max-width:72ch; }
+
+@media (max-width: 800px){
+  .levers-grid{ grid-template-columns:1fr; }
+  .summary{ position:static; order:-1; }
+  .facts{ grid-template-columns:repeat(2, minmax(0,1fr)); }
+  .facts div:nth-child(3){ border-left:none; padding-left:0; }
+  .wf-line{ grid-template-columns:1fr 5.5rem; gap:0.25rem 0.75rem; }
+  .wf-track{ grid-column:1 / -1; grid-row:2; }
+  .steps li{ grid-template-columns:1fr; gap:0.25rem; }
+}
+@media (prefers-reduced-motion: reduce){ *{ transition:none !important; } }
+.choice{ display:grid; grid-template-columns:1fr 1fr; border:1px solid var(--rule); border-radius:6px; overflow:hidden; margin:0; padding:0; }
+.choice legend{ position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); }
+.choice label{ display:block; padding:0.7rem 0.9rem; cursor:pointer; font-size:1rem; line-height:1.3; }
+.choice label + label{ border-left:1px solid var(--rule); }
+.choice label small{ display:block; color:var(--muted); font-size:0.88rem; margin-top:0.15rem; }
+.choice input{ position:absolute; opacity:0; pointer-events:none; }
+.choice label:has(input:checked){ background:var(--brand); color:var(--on-brand); }
+.choice label:has(input:checked) small{ color:inherit; opacity:0.85; }
+.choice label:has(input:focus-visible){ outline:3px solid var(--brand); outline-offset:-3px; }
+.lever-result .cost{ flex-basis:100%; }
+
+.choice-3{ grid-template-columns:repeat(3,1fr); }
+.choice:disabled label{ cursor:not-allowed; }
+.ho-note{ color:var(--muted); font-size:1rem; margin:1rem 0 0; max-width:62ch; }
+.facts dd.eff-prior{ font-family:inherit; font-size:0.92rem; color:var(--muted); margin-top:0.1rem; }
+@media (max-width: 640px){ .choice{ grid-template-columns:1fr !important; } .choice label + label{ border-left:none; border-top:1px solid var(--rule); } }
+</style>
 </head>
 <body>
-<p class="p1"><span class="s1">Higginbotham Tax &amp; Advisory, PLLC</span></p>
-<p class="p2"><span class="s1">Natasha Backman / Yasmeen Ajdari</span><br></p>
-<h1 style="margin: 0.0px 0.0px 15.0px 0.0px; line-height: 41.2px; font: 36.8px Georgia; color: #151b18; -webkit-text-stroke: #151b18"><span class="s1">Your 2026 federal tax projection</span></h1>
-<p class="p4"><span class="s1"></span><br></p>
-<p class="p5"><span class="s1">2026 projected tax</span></p>
-<p class="p6"><span class="s1"></span><br></p>
-<p class="p5"><span class="s1">2025 tax</span></p>
-<p class="p6"><span class="s1"></span><br></p>
-<p class="p5"><span class="s1">Top tax bracket</span></p>
-<p class="p6"><span class="s1"></span><br></p>
-<p class="p5"><span class="s1">Effective rate</span></p>
-<p class="p6"><span class="s1"></span><br></p>
-<p class="p7"><span class="s1"></span><br></p>
-<p class="p8"><span class="s1"></span><br></p>
-<h2 style="margin: 0.0px 0.0px 6.0px 0.0px; line-height: 33.3px; font: 22.2px Georgia; color: #151b18; -webkit-text-stroke: #151b18"><span class="s1">First, your home office</span></h2>
-<p class="p10"><span class="s1">Choose what describes the space you actually use. To count, it has to be used regularly and only for the business. Every figure on this page is calculated from this answer.</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<h2 style="margin: 0.0px 0.0px 6.0px 0.0px; line-height: 33.3px; font: 22.2px Georgia; color: #151b18; -webkit-text-stroke: #151b18"><span class="s1">Where your income lands</span></h2>
-<p class="p10"><span class="s1">Each bracket only taxes the income inside it. The marker shows where your last dollar of ordinary income falls, which is the rate every deduction you add will save first.</span></p>
-<p class="p11"><span class="s1"></span><br></p>
-<p class="p11"><span class="s1"></span><br></p>
-<h2 style="margin: 0.0px 0.0px 6.0px 0.0px; line-height: 33.3px; font: 22.2px Georgia; color: #151b18; -webkit-text-stroke: #151b18"><span class="s1">What changed since 2025</span></h2>
-<p class="p10"><span class="s1">Starting from last year’s bill, each line shows how much one change added or removed. Select a line to see the detail behind it.</span></p>
-<p class="p11"><span class="s1"></span><br></p>
-<p class="p12"><span class="s1"></span><br></p>
-<p class="p13"><span class="s1">See the line-by-line comparison</span></p>
-<p class="p14"><span class="s1"></span><br></p>
-<h2 style="margin: 0.0px 0.0px 6.0px 0.0px; line-height: 33.3px; font: 22.2px Georgia; color: #151b18; -webkit-text-stroke: #151b18"><span class="s1">Ways to lower the bill</span></h2>
-<p class="p10"><span class="s1">Adjust each item to what you’re considering. Savings are measured from your projection with the home office you described. Each is recalculated on your full return, so they reflect your bracket, the standard deduction, and how the moves interact with each other.</span></p>
-<p class="p11"><span class="s1"></span><br></p>
-<h3 style="margin: 0.0px 0.0px 12.0px 0.0px; line-height: 22.5px; font: 15.0px Georgia; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s2">Your plan</span></h3>
-<p class="p16"><span class="s2">Tax as projected</span></p>
-<p class="p17"><span class="s1"></span><br></p>
-<p class="p16"><span class="s2">Tax with your plan</span></p>
-<p class="p17"><span class="s1"></span><br></p>
-<p class="p16"><span class="s2">Tax saved</span></p>
-<p class="p18"><span class="s1"></span><br></p>
-<p class="p16"><span class="s2">Spent on gifts and expenses</span></p>
-<p class="p17"><span class="s1"></span><br></p>
-<p class="p16"><span class="s2">Moved into retirement savings</span></p>
-<p class="p17"><span class="s1"></span><br></p>
-<p class="p19"><span class="s1"></span><br></p>
-<p class="p20"><span class="s1">Reset to projection</span><span class="s3"><span class="Apple-converted-space"> </span></span></p>
-<h2 style="margin: 0.0px 0.0px 6.0px 0.0px; line-height: 33.3px; font: 22.2px Georgia; color: #151b18; -webkit-text-stroke: #151b18"><span class="s1">Staying ahead of penalties</span></h2>
-<p class="p10"><span class="s1">Underpayment penalties are avoided by paying at least 110% of last year’s tax during the year. That is a different number from what you’ll owe in total, so it’s worth planning both.</span></p>
-<p class="p11"><span class="s1"></span><br></p>
-<h2 style="margin: 0.0px 0.0px 6.0px 0.0px; line-height: 33.3px; font: 22.2px Georgia; color: #151b18; -webkit-text-stroke: #151b18"><span class="s1">What happens next</span></h2>
-<p class="p10"><span class="s1">The dates that matter for the plan above. This list updates as you adjust the items.</span></p>
-<ul class="ul1">
-  <li class="li21"></li>
-</ul>
-<p class="p22"><span class="s1">Projection assumes married filing jointly, Texas residency (no state income tax), and no dependents. It applies 2026 brackets, the standard deduction, rates on qualified dividends and long-term gains, self-employment tax, the additional Medicare tax, the net investment income tax, the SALT cap and its phase-down, the 0.5% floor on itemized charitable gifts, the $2,000 charitable deduction for non-itemizers, and the 2/37 limit on itemized deductions in the top bracket. Totals are matched to the CCH projection, which uses the 600 square foot office; any small difference appears as “Other items.” Wages are taxable wages after any current 401(k) deferrals.</span></p>
-<p class="p22"><span class="s1">These figures are projections for planning discussion and will change as the year closes. Please review any move with us before acting on it.</span></p>
+<div class="wrap">
+  <header class="mast">
+    <span class="firm">Higginbotham Tax &amp; Advisory, PLLC</span>
+    <span id="prepared"></span>
+  </header>
+
+  <div class="hero">
+    <h1 id="headline">Your 2026 federal tax projection</h1>
+    <p class="lede" id="lede"></p>
+    <dl class="facts">
+      <div><dt>2026 projected tax</dt><dd class="num" id="f-now"></dd></div>
+      <div><dt>2025 tax</dt><dd class="num" id="f-prior"></dd></div>
+      <div><dt>Top tax bracket</dt><dd class="num" id="f-bracket"></dd></div>
+      <div><dt>Effective rate</dt><dd class="num" id="f-eff"></dd><dd class="eff-prior num" id="f-eff-prior"></dd></div>
+    </dl>
+    <p class="aside" id="payroll-note"></p>
+  </div>
+
+  <section id="home-office">
+    <h2>First, your home office</h2>
+    <p class="intro">Choose what describes the space you actually use. To count, it has to be used regularly and only for the business. Every figure on this page is calculated from this answer.</p>
+    <fieldset class="choice choice-3" id="ho-space"></fieldset>
+    <fieldset class="choice" id="ho-method" style="margin-top:0.75rem"></fieldset>
+    <p class="ho-note" id="ho-note"></p>
+  </section>
+
+  <section id="bracket">
+    <h2>Where your income lands</h2>
+    <p class="intro">Each bracket only taxes the income inside it. The marker shows where your last dollar of ordinary income falls, which is the rate every deduction you add will save first.</p>
+    <div class="ruler" id="ruler" aria-hidden="true"></div>
+    <p class="ruler-note" id="ruler-note"></p>
+  </section>
+
+  <section id="changes">
+    <h2>What changed since 2025</h2>
+    <p class="intro">Starting from last year’s bill, each line shows how much one change added or removed. Select a line to see the detail behind it.</p>
+    <div class="wf" id="wf"></div>
+    <p class="wf-axis" id="wf-axis"></p>
+    <details class="more">
+      <summary>See the line-by-line comparison</summary>
+      <div class="table-scroll"><table id="compare"></table></div>
+    </details>
+  </section>
+
+  <section id="levers">
+    <h2>Ways to lower the bill</h2>
+    <p class="intro">Adjust each item to what you’re considering. Savings are measured from your projection with the home office you described. Each is recalculated on your full return, so they reflect your bracket, the standard deduction, and how the moves interact with each other.</p>
+    <div class="levers-grid">
+      <div id="lever-list"></div>
+      <aside class="summary" aria-live="polite">
+        <h3>Your plan</h3>
+        <dl>
+          <div class="row"><dt>Tax as projected</dt><dd class="num" id="s-base"></dd></div>
+          <div class="row"><dt>Tax with your plan</dt><dd class="num" id="s-plan"></dd></div>
+          <div class="big"><dt id="s-saved-label">Tax saved</dt><dd class="num" id="s-saved"></dd></div>
+          <div class="row"><dt>Spent on gifts and expenses</dt><dd class="num" id="s-spent"></dd></div>
+          <div class="row"><dt>Moved into retirement savings</dt><dd class="num" id="s-kept"></dd></div>
+        </dl>
+        <p id="s-note"></p>
+        <button type="button" id="reset">Reset to projection</button>
+      </aside>
+    </div>
+  </section>
+
+  <section id="payments">
+    <h2>Staying ahead of penalties</h2>
+    <p class="intro">Underpayment penalties are avoided by paying at least 110% of last year’s tax during the year. That is a different number from what you’ll owe in total, so it’s worth planning both.</p>
+    <dl class="ledger" id="ledger"></dl>
+  </section>
+
+  <section id="next">
+    <h2>What happens next</h2>
+    <p class="intro">The dates that matter for the plan above. This list updates as you adjust the items.</p>
+    <ol class="steps" id="steps"></ol>
+  </section>
+
+  <footer>
+    <p>Projection assumes married filing jointly, Texas residency (no state income tax), and no dependents. It applies 2026 brackets, the standard deduction, rates on qualified dividends and long-term gains, self-employment tax, the additional Medicare tax, the net investment income tax, the SALT cap and its phase-down, the 0.5% floor on itemized charitable gifts, the $2,000 charitable deduction for non-itemizers, and the 2/37 limit on itemized deductions in the top bracket. Totals are matched to the CCH projection, which uses the 600 square foot office; any small difference appears as “Other items.” Wages are taxable wages after any current 401(k) deferrals.</p>
+    <p>These figures are projections for planning discussion and will change as the year closes. Please review any move with us before acting on it.</p>
+  </footer>
+</div>
+
+<script>
+/* ---------- Client data: edit this block for each client ---------- */
+const CLIENT = {
+  name: "Natasha Backman / Yasmeen Ajdari",
+  prepared: "November 2026",
+  kids: 0,
+  y2025: { ownerW2:196076, spouseW2:410254, intDiv:4506, qualDiv:2743, ltcg:481, stcg:-161, schC:33572, propTax:10465, mortInt:35437, charity:0 },
+  y2026: { ownerW2:213782, spouseW2:529036, intDiv:5504, qualDiv:4942, ltcg:1318, stcg:548, schC:3641, propTax:6218, mortInt:20383, charity:0 },
+  cch: { 2025:152834, 2026:193742 },        // CCH total federal tax, used to tie out
+  paid2025: 125227 + 10000,                 // 2025 withholding + estimates
+  withholding: 157384,                      // 2026 projected full-year withholding
+  estimatesPaid: 8000,                      // 2026 estimates paid to date
+  retirement: { limit:24500, taxpayerDeferred:13538, spouseDeferred:17447 },  // 2026 deferral limit and W-2 deferrals so far
+  homeOffice: {
+    beforeHO: 3641 + 27990.17,              // Schedule C profit before any home office deduction
+    mortTotal: 33972, taxTotal: 10363.33,   // full-year mortgage interest and property tax on the home
+    spaces: {
+      large: { label:"600 sq ft", detail:"2 of the home’s 5 rooms", sqft:600, actual:{ total:27990.17, mort:13588.80, tax:4145.33, dep:5239.38 } },
+      small: { label:"215 sq ft", detail:"The space used last year", sqft:215, actual:{ total:9068.55, mort:4402.64, tax:1343.05, dep:1697.51 } },
+      none:  { label:"No dedicated space", detail:"Nothing used regularly and only for the business", sqft:0 }
+    }
+  }
+};
+
+/* ---------- Tax law parameters ---------- */
+const LAW = {
+  2025:{ br:[[23850,.10],[96950,.12],[206700,.22],[394600,.24],[501050,.32],[751600,.35],[Infinity,.37]],
+         std:31500, cg0:96700, cg15:600050, saltCap:40000, saltPhase:500000, ssBase:176100,
+         qbiT:394600, qbiR:100000, charFloor:0, nonItem:0, ctc:2200, limit68:false },
+  2026:{ br:[[24800,.10],[100800,.12],[211400,.22],[403550,.24],[512450,.32],[768700,.35],[Infinity,.37]],
+         std:32200, cg0:98900, cg15:613700, saltCap:40400, saltPhase:505000, ssBase:184500,
+         qbiT:403500, qbiR:150000, charFloor:.005, nonItem:2000, ctc:2200, limit68:true }
+};
+
+function bracketTax(br, x){
+  let tax=0, lo=0;
+  for(const [hi,r] of br){ if(x<=lo) break; tax += (Math.min(x,hi)-lo)*r; lo=hi; }
+  return tax;
+}
+function calc(year, d){
+  const L = LAW[year];
+  const deferral = d.deferral||0, extraCharity = d.extraCharity||0;
+  const medWages = d.ownerW2 + d.spouseW2;            // new deferrals still count for Medicare
+  const wages = medWages - deferral;
+  const nese = d.schC*0.9235 >= 400 ? d.schC*0.9235 : 0;
+  const ssRoom = Math.max(0, L.ssBase - Math.min(d.ownerW2, d.spouseW2));
+  const seTax = 0.124*Math.min(nese, ssRoom) + 0.029*nese;
+  const halfSE = seTax/2;
+  const capNet = d.ltcg + d.stcg;
+  const ncg = Math.max(0, Math.min(d.ltcg, capNet));
+  const agi = wages + d.schC + d.intDiv + Math.max(capNet, -3000) - halfSE - (d.solo||0);
+  const salt = Math.min(d.propTax, Math.max(10000, L.saltCap - 0.3*Math.max(0, agi - L.saltPhase)));
+  const charity = d.charity + extraCharity;
+  let itemized = salt + d.mortInt + Math.max(0, charity - L.charFloor*agi);
+  if(L.limit68) itemized -= (2/37)*Math.min(itemized, Math.max(0, agi - L.br[5][0]));
+  const stdTotal = L.std + Math.min(charity, L.nonItem);
+  const itemizes = itemized > stdTotal;
+  const deduction = itemizes ? itemized : stdTotal;
+  const tiPre = Math.max(0, agi - deduction);
+  // QBI on Schedule C: no W-2 wages paid, so it phases out fully above the threshold
+  let qbi = 0.2*Math.max(0, d.schC - halfSE);
+  if(tiPre > L.qbiT) qbi *= 1 - Math.min(1, (tiPre - L.qbiT)/L.qbiR);
+  qbi = Math.min(qbi, 0.2*Math.max(0, tiPre - d.qualDiv - ncg));
+  const ti = Math.max(0, tiPre - qbi);
+  const pref = Math.min(ti, d.qualDiv + ncg);
+  const ordinary = ti - pref;
+  const ordTax = bracketTax(L.br, ordinary);
+  const zero = Math.max(0, Math.min(pref, L.cg0 - ordinary));
+  const rest = pref - zero;
+  const fifteen = Math.min(rest, Math.max(0, L.cg15 - Math.max(ordinary, L.cg0)));
+  const prefTax = 0.15*fifteen + 0.20*(rest - fifteen);
+  const niit = 0.038*Math.min(d.intDiv + Math.max(0, capNet), Math.max(0, agi - 250000));
+  const addlMed = 0.009*Math.max(0, medWages - 250000) + 0.009*Math.max(0, nese - Math.max(0, 250000 - medWages));
+  const ctcRaw = L.ctc*CLIENT.kids;
+  const credit = Math.min(Math.max(0, ctcRaw - 50*Math.ceil(Math.max(0, agi - 400000)/1000)), ordTax + prefTax);
+  const preCredit = ordTax + prefTax + niit + seTax + addlMed;
+  let rate=.10, top=0, lo=0;
+  for(const [hi,r] of L.br){ if(ordinary <= hi){ rate=r; top=hi; break; } lo=hi; }
+  return { wages, schC:d.schC, intDiv:d.intDiv, capNet, halfSE, agi, itemizes, itemized, deduction, qbi, ti, ordinary,
+           ordTax, prefTax, seTax, addlMed, niit, credit, preCredit, model: preCredit - credit,
+           rate, room: top - ordinary, intoBracket: ordinary - lo };
+}
+
+/* ---------- Scenarios and tie-out ---------- */
+const D25 = CLIENT.y2025, D26 = CLIENT.y2026, HO = CLIENT.homeOffice;
+const RET = CLIENT.retirement;
+const SPOUSE_ROOM = Math.max(0, RET.limit - RET.spouseDeferred);
+const TP_ROOM = Math.max(0, RET.limit - RET.taxpayerDeferred);
+const ho = { space:"large", method:"actual" };   // the client's answer drives every figure on the page
+// Home office with the gross income limit: business mortgage interest and taxes are allowed in full,
+// then operating costs, then depreciation, each limited to what profit remains. Disallowed actual costs carry to next year.
+function hoFigures(h, accel=0){
+  const sp = HO.spaces[h.space], T = HO.beforeHO - accel;
+  if(!sp.sqft) return { schC:T, mortInt:HO.mortTotal, propTax:HO.taxTotal, total:0, dep:0, carry:0, lost:0 };
+  if(h.method==="simple"){
+    const amt = Math.min(sp.sqft,300)*5, allowed = Math.min(amt, Math.max(0,T));
+    return { schC:T-allowed, mortInt:HO.mortTotal, propTax:HO.taxTotal, total:allowed, dep:0, carry:0, lost:amt-allowed };
+  }
+  const a = sp.actual, mt = a.mort + a.tax, ops = a.total - mt - a.dep;
+  const opsOk = Math.min(ops, Math.max(0, T - mt)), depOk = Math.min(a.dep, Math.max(0, T - mt - opsOk));
+  const total = mt + opsOk + depOk;
+  return { schC:T-total, mortInt:HO.mortTotal-a.mort, propTax:HO.taxTotal-a.tax, total, dep:depOk, carry:(ops-opsOk)+(a.dep-depOk), lost:0 };
+}
+const START = { spouse401:0, accel:0, solo:0, give:0 };
+// Solo 401(k) ceiling: remaining deferral room plus 20% of net SE earnings less half SE tax, capped at those earnings
+function soloMax(h, accel){
+  if(accel===undefined) accel = state.accel;
+  const schC = hoFigures(h || ho, accel).schC, nese = schC*0.9235 >= 400 ? schC*0.9235 : 0;
+  const ss = 0.124*Math.min(nese, Math.max(0, LAW[2026].ssBase - Math.min(D26.ownerW2, D26.spouseW2)));
+  const earned = Math.max(0, schC - (ss + 0.029*nese)/2);
+  return Math.floor(Math.min(TP_ROOM + 0.2*earned, earned));
+}
+function data26(st, h){ const acc = st.accel||0, f = hoFigures(h || ho, acc); return { ...D26, schC:f.schC, mortInt:f.mortInt, propTax:f.propTax,
+  deferral:st.spouse401||0, solo:Math.min(st.solo||0, soloMax(h, acc)), extraCharity:st.give||0 }; }
+// CCH projection was prepared with the 600 sq ft office on actual expenses
+const CAL = { 2025: CLIENT.cch[2025] - calc(2025, D25).model, 2026: CLIENT.cch[2026] - calc(2026, data26(START, {space:"large", method:"actual"})).model };
+function run(year, d){ const r = calc(year, d); r.total = r.model + CAL[year]; r.eff = r.total / r.agi; return r; }
+const R25 = run(2025, D25);
+let BASE;
+const PAID = CLIENT.withholding + CLIENT.estimatesPaid;
+
+/* ---------- Formatting ---------- */
+const $ = id => document.getElementById(id);
+const money = n => (Math.round(n)<0?"−":"") + "$" + Math.round(Math.abs(n)).toLocaleString("en-US");
+const signed = n => (Math.round(n)>=0?"+":"−") + "$" + Math.round(Math.abs(n)).toLocaleString("en-US");
+const about = n => "$" + (Math.round(n/100)*100).toLocaleString("en-US");
+const pct = r => (Math.round(r*1000)/10).toString() + "%";
+
+/* ---------- Year over year ---------- */
+function bridgeRows(){
+  const s0 = calc(2025, D25).model;
+  const s1 = calc(2026, D25).model;
+  const w = { ...D25, ownerW2:D26.ownerW2, spouseW2:D26.spouseW2 };
+  const s2 = calc(2026, w).model;
+  const inv = { ...w, intDiv:D26.intDiv, qualDiv:D26.qualDiv, ltcg:D26.ltcg, stcg:D26.stcg };
+  const s3 = calc(2026, inv).model;
+  const s4 = BASE.model;
+  const f = hoFigures(ho), sp = HO.spaces[ho.space];
+  const officeText = !sp.sqft ? "With no home office claimed, all of it is Schedule C profit"
+    : `With the ${sp.label} office on the ${ho.method==="simple"?"simplified":"actual expense"} method, the home office deduction is ${money(f.total)} and Schedule C profit is ${money(f.schC)}`;
+  return [
+    { label:"2025 federal tax", total:R25.total },
+    { label:"Inflation adjustments", delta:s1-s0, why:"inflation adjustments",
+      detail:`Brackets and the standard deduction rose with inflation (standard deduction ${money(LAW[2025].std)} to ${money(LAW[2026].std)}). Running last year’s exact income through this year’s rules changes the bill by ${signed(s1-s0)}.` },
+    { label:"Higher wages", delta:s2-s1, why:"higher wages",
+      detail:`Your wages rise from ${money(D25.ownerW2)} to ${money(D26.ownerW2)}, and your spouse’s from ${money(D25.spouseW2)} to ${money(D26.spouseW2)}. At this income, added wages are taxed at 35%, plus the 0.9% additional Medicare tax on wages above $250,000.` },
+    { label:"Investment income", delta:s3-s2, why:"investment income",
+      detail:`Interest and dividends are ${money(D26.intDiv)} (${money(D26.qualDiv)} qualified), and net capital gains are ${money(D26.ltcg + D26.stcg)}. At this income, qualified dividends and long-term gains are taxed at 20%, and all investment income carries the 3.8% net investment income tax.` },
+    { label:"Business income and home costs", delta:s4-s3, why:"business income and home costs",
+      detail:`Before any home office deduction, the business is projected to earn ${money(HO.beforeHO)}, compared with ${money(D25.schC)} of Schedule C profit in 2025. ${officeText}. Mortgage interest and property tax left for Schedule A total ${money(f.mortInt + f.propTax)}, compared with ${money(D25.mortInt + D25.propTax)} in 2025${BASE.itemizes ? ", so you itemize." : `, which is below the ${money(LAW[2026].std)} standard deduction, so you take the standard deduction.`}` },
+    { label:"Other items", delta:CAL[2026]-CAL[2025], why:"other items",
+      detail:`Small items in your CCH projection that this page doesn’t calculate separately, so both years match your return projections.` },
+    { label:"2026 projected tax", total:BASE.total }
+  ].filter(r => r.total!==undefined || Math.abs(r.delta) >= 1);
+}
+
+function renderHero(){
+  const rows = bridgeRows();
+  const diff = BASE.total - R25.total;
+  const main = rows.filter(r=>r.delta!==undefined && Math.sign(r.delta)===Math.sign(diff)).sort((a,b)=>Math.abs(b.delta)-Math.abs(a.delta))[0];
+  $("prepared").textContent = `Prepared for ${CLIENT.name}, ${CLIENT.prepared}`;
+  $("headline").textContent = `Your 2026 federal tax is projected to be about ${about(Math.abs(diff))} ${diff>=0?"higher":"lower"} than last year.`;
+  $("lede").textContent = `That’s a total of about ${about(BASE.total)} for 2026, compared with ${money(R25.total)} for 2025, mostly because of ${main ? main.why : "small changes across the return"}. Below is where the number comes from, what changed, and the moves still available before December 31. What’s left to pay in January and April is covered further down.`;
+  $("f-now").textContent = money(BASE.total);
+  $("f-prior").textContent = money(R25.total);
+  $("f-bracket").textContent = pct(BASE.rate);
+  $("f-eff").textContent = `${pct(BASE.eff)}`;
+  $("f-eff-prior").textContent = `2025: ${pct(R25.eff)}`;
+  $("payroll-note").textContent = `Totals include additional Medicare tax on wages above $250,000, self-employment tax on Schedule C income, and net investment income tax. Effective rate is total federal tax divided by adjusted gross income.`;
+}
+
+function renderChanges(){
+  const rows = bridgeRows();
+  let r0 = R25.total; const levels=[r0];
+  rows.forEach(r=>{ if(r.delta!==undefined){ r0+=r.delta; levels.push(r0);} });
+  const lo = Math.floor(Math.min(...levels)*0.8/10000)*10000;
+  const hi = Math.ceil(Math.max(...levels)*1.04/10000)*10000;
+  const x = v => (v-lo)/(hi-lo)*100;
+  let html = "", cur = R25.total;
+  for(const r of rows){
+    if(r.total!==undefined){
+      html += `<div class="wf-row wf-total"><div class="wf-line"><span class="wf-label">${r.label}</span><span class="wf-track"><span class="wf-bar total" style="left:0;width:${x(r.total)}%"></span></span><span class="wf-val num serif">${money(r.total)}</span></div></div>`;
+    } else {
+      const a = cur, b = cur + r.delta; cur = b;
+      const left = x(Math.min(a,b)), w = Math.max(0.6, Math.abs(x(b)-x(a)));
+      const dir = r.delta >= 0 ? "up" : "down";
+      html += `<details class="wf-row"><summary class="wf-line"><span class="wf-label"><span class="chev">›</span>${r.label}</span><span class="wf-track"><span class="wf-bar ${dir}" style="left:${left}%;width:${w}%"></span></span><span class="wf-val num ${dir}">${signed(r.delta)}</span></summary><div class="wf-detail">${r.detail}</div></details>`;
+    }
+  }
+  $("wf").innerHTML = html;
+  $("wf-axis").textContent = `Bars begin at ${money(lo)} so the changes are easier to see. Filled bars added tax; outlined bars removed it.`;
+
+  const line = (label, a, b, cls="") => `<tr class="${cls}"><td>${label}</td><td class="num">${money(a)}</td><td class="num">${money(b)}</td><td class="num">${signed(b-a)}</td></tr>`;
+  const t25 = R25.total - CLIENT.paid2025, t26 = BASE.total - PAID;
+  $("compare").innerHTML = `<thead><tr><th></th><th>2025</th><th>2026 projected</th><th>Change</th></tr></thead><tbody>
+    ${line("Wages (both of you)", R25.wages, BASE.wages)}
+    ${line("Schedule C profit", R25.schC, BASE.schC)}
+    ${line("Interest and dividends", R25.intDiv, BASE.intDiv)}
+    ${line("Net capital gains", R25.capNet, BASE.capNet)}
+    ${line("Half of self-employment tax", -R25.halfSE, -BASE.halfSE)}
+    ${line("Adjusted gross income", R25.agi, BASE.agi, "sum")}
+    <tr><td>Deduction (${R25.itemizes?"itemized":"standard"} in 2025, ${BASE.itemizes?"itemized":"standard"} in 2026)</td><td class="num">${money(-R25.deduction)}</td><td class="num">${money(-BASE.deduction)}</td><td class="num">${signed(R25.deduction-BASE.deduction)}</td></tr>
+    ${line("Taxable income", R25.ti, BASE.ti, "sum")}
+    ${line("Income tax on ordinary income", R25.ordTax, BASE.ordTax)}
+    ${line("Tax on qualified dividends and gains", R25.prefTax, BASE.prefTax)}
+    ${line("Self-employment tax", R25.seTax, BASE.seTax)}
+    ${line("Additional Medicare tax", R25.addlMed, BASE.addlMed)}
+    ${line("Net investment income tax", R25.niit, BASE.niit)}
+    ${line("Other items per CCH", CAL[2025], CAL[2026])}
+    ${line("Total federal tax", R25.total, BASE.total, "grand")}
+    ${line("Paid or withheld", CLIENT.paid2025, PAID)}
+    ${line("Owed at filing", t25, t26, "sum")}
+    <tr><td>Effective rate</td><td class="num">${pct(R25.eff)}</td><td class="num">${pct(BASE.eff)}</td><td></td></tr>
+    <tr><td>Top bracket</td><td class="num">${pct(R25.rate)}</td><td class="num">${pct(BASE.rate)}</td><td></td></tr>
+  </tbody>`;
+}
+
+/* ---------- Bracket ruler ---------- */
+function renderRuler(plan){
+  const br = LAW[2026].br;
+  const MAX = Math.max(600000, Math.ceil(Math.max(plan.ordinary, BASE.ordinary)*1.2/100000)*100000);
+  let html = '<div class="ruler-bar">', lo = 0;
+  for(const [hi,r] of br){
+    if(lo >= MAX) break;
+    const end = Math.min(hi, MAX);
+    const cls = plan.ordinary > end ? "filled" : (plan.ordinary > lo ? "top" : "");
+    html += `<div class="seg ${cls}" style="width:${(end-lo)/MAX*100}%">${Math.round(r*100)}%</div>`;
+    lo = hi;
+  }
+  html += '</div>';
+  const pos = v => Math.min(100, v/MAX*100);
+  const changed = Math.abs(plan.ordinary - BASE.ordinary) > 1;
+  if(changed) html += `<div class="marker ghost" style="left:${pos(BASE.ordinary)}%"><span>As projected</span></div>`;
+  html += `<div class="marker" style="left:${pos(plan.ordinary)}%"><span>${changed?"With your plan":"You"}: ${money(plan.ordinary)}</span></div>`;
+  html += `<div class="ruler-scale"><span>$0</span><span>${money(MAX/3)}</span><span>${money(MAX*2/3)}</span><span>${money(MAX)} of taxable ordinary income</span></div>`;
+  $("ruler").innerHTML = html;
+  const next = br.find(b=>b[1]>plan.rate);
+  let note;
+  if(!changed){
+    note = `Your top ${money(BASE.intoBracket)} of ordinary income is taxed at ${pct(BASE.rate)}, so new deductions save ${pct(BASE.rate)} until income drops below that bracket. You are ${money(BASE.room)} below the ${next?pct(next[1]):""} bracket. Qualified dividends and long-term gains are taxed separately at 15% and aren’t shown here.`;
+  } else if(plan.rate !== BASE.rate){
+    note = `Your plan moves your top dollar from the ${pct(BASE.rate)} bracket to ${pct(plan.rate)}.`;
+  } else {
+    note = `Your plan changes taxable ordinary income by ${signed(plan.ordinary - BASE.ordinary)}. Your top dollar stays in the ${pct(plan.rate)} bracket.`;
+  }
+  $("ruler-note").textContent = note;
+}
+
+/* ---------- Levers ---------- */
+const state = { ...START };
+const slider = (id, label, max) => `
+      <div class="lever-control">
+        <input type="range" id="in-${id}" min="0" max="${max}" step="1" value="0" aria-label="${label}">
+        <output id="out-${id}" class="num" for="in-${id}">$0</output>
+      </div>
+      <div class="lever-scale"><span>$0</span><span id="max-${id}">${money(max)}</span></div>
+      <div class="lever-result"><span class="saves num" id="sv-${id}"></span><span class="cost" id="ct-${id}"></span></div>`;
+function buildLevers(){
+  $("lever-list").innerHTML = `
+    <div class="lever">
+      <h3>Spouse’s 401(k) at work</h3>
+      <p class="what">${money(RET.spouseDeferred)} deferred so far this year, leaving ${money(SPOUSE_ROOM)} under the ${money(RET.limit)} limit.</p>
+      ${slider("spouse401", "Additional spouse 401(k) deferral", SPOUSE_ROOM)}
+      <p class="when">Must come out of paychecks by the last payroll of the year, so the amount still possible depends on how many pay periods are left.</p>
+    </div>
+    <div class="lever">
+      <h3>Business expenses paid before year end</h3>
+      <p class="what">Costs the business would pay anyway, such as supplies, software, equipment, or services paid up to 12 months ahead, moved into 2026 by paying them before December 31.</p>
+      ${slider("accel", "Business expenses paid early", 40000)}
+      <p class="when" id="when-accel"></p>
+    </div>
+    <div class="lever">
+      <h3>Solo 401(k) for the Schedule C business</h3>
+      <p class="what">Your ${money(RET.taxpayerDeferred)} of deferrals at work leave ${money(TP_ROOM)} of the ${money(RET.limit)} limit for a solo 401(k), plus a profit-sharing contribution of up to 20% of the business’s net earnings. Contributions can’t exceed what the business earns, so the ceiling depends on the home office answer above.</p>
+      ${slider("solo", "Solo 401(k) contribution", soloMax())}
+      <p class="when" id="when-solo"></p>
+    </div>
+    <div class="lever">
+      <h3>Charitable giving</h3>
+      <p class="what" id="what-give"></p>
+      ${slider("give", "Charitable giving", 40000)}
+      <p class="when">Gifts must be made by December 31. A donor-advised fund lets you take the deduction now and choose charities later.</p>
+    </div>`;
+  ["spouse401","accel","solo","give"].forEach(id=>{ const inp=$("in-"+id); inp.addEventListener("input", ()=>{ state[id]=+inp.value; update(); }); });
+  $("reset").addEventListener("click", ()=>{ Object.assign(state, START); ["spouse401","accel","solo","give"].forEach(id=>$("in-"+id).value=0); update(); });
+}
+function buildHomeOffice(){
+  const spaces = Object.entries(HO.spaces);
+  $("ho-space").innerHTML = `<legend>Space used</legend>` + spaces.map(([k,s])=>`<label><input type="radio" name="ho-space" value="${k}"${k===ho.space?" checked":""}>${s.label}<small>${s.detail}</small></label>`).join("");
+  $("ho-method").innerHTML = `<legend>Method</legend>
+    <label><input type="radio" name="ho-method" value="actual" checked>Actual expenses<small>A share of mortgage interest, property tax, insurance, utilities, upkeep, and depreciation</small></label>
+    <label><input type="radio" name="ho-method" value="simple">Simplified method<small>$5 per square foot, up to 300 square feet, with no depreciation</small></label>`;
+  document.querySelectorAll('input[name="ho-space"]').forEach(r=>r.addEventListener("change", ()=>{ ho.space=r.value; refresh(); }));
+  document.querySelectorAll('input[name="ho-method"]').forEach(r=>r.addEventListener("change", ()=>{ ho.method=r.value; refresh(); }));
+}
+function refresh(){
+  BASE = run(2026, data26(START));
+  const none = !HO.spaces[ho.space].sqft;
+  $("ho-method").disabled = none;
+  $("ho-method").style.opacity = none ? 0.45 : 1;
+  const f = hoFigures(ho);
+  const std = LAW[2026].std, sa = BASE.itemized;
+  const schA = BASE.itemizes
+    ? `Mortgage interest and property tax left on Schedule A come to ${money(sa)}, which is ${money(sa - std)} more than the ${money(std)} standard deduction, so you itemize.`
+    : `Mortgage interest and property tax left on Schedule A come to ${money(sa)}, below the ${money(std)} standard deduction, so you take the standard deduction and the personal share of those costs adds no further benefit.`;
+  $("ho-note").textContent = (none
+    ? "No home office is claimed. "
+    : `${f.dep ? `This includes ${money(f.dep)} of depreciation, which is taxed at up to 25% when the home is sold.` : "No depreciation is claimed, so nothing is recaptured when the home is sold."} `) + schA + " Everything on this page now reflects this answer.";
+  renderHero(); renderChanges(); update();
+}
+function setSlider(id, v, max){ const inp=$("in-"+id); inp.max = max; inp.value = v; inp.style.setProperty("--p", (max? v/max*100 : 0)+"%"); $("out-"+id).textContent = money(v); $("max-"+id).textContent = money(max); }
+
+function update(){
+  const sMax = soloMax();
+  if(state.solo > sMax) state.solo = sMax;
+  const plan = run(2026, data26(state));
+  const without = (k, v) => run(2026, data26({ ...state, [k]:v })).total;
+
+  setSlider("spouse401", state.spouse401, SPOUSE_ROOM);
+  const ss = without("spouse401",0) - plan.total;
+  $("sv-spouse401").textContent = state.spouse401 ? `Saves ${money(ss)}` : "No change";
+  $("ct-spouse401").textContent = state.spouse401 ? `All ${money(state.spouse401)} stays yours, invested for retirement. Deferrals lower income tax but not Social Security or Medicare tax.` : "";
+
+  setSlider("accel", state.accel, 40000);
+  const sa = without("accel",0) - plan.total, fa = hoFigures(ho, state.accel), f0 = hoFigures(ho, 0);
+  $("sv-accel").textContent = state.accel ? `Saves ${money(sa)}` : "No change";
+  const nextA = Math.round((plan.total - without("accel", state.accel+100))/100*100);
+  $("ct-accel").textContent = state.accel ? `That’s about ${Math.round(sa/state.accel*100)}¢ of tax saved per dollar spent, so ${money(state.accel-sa)} of the spending is yours to cover. At this level, the next dollar spent saves ${nextA}¢.` : "";
+  const parts = [];
+  const pinned = Math.abs(fa.schC) < 1 && (fa.carry > 0 || fa.lost > 0);
+  if(pinned) parts.push(fa.carry > 0 ? "At this level, the added expenses mostly push home office costs into next year instead of lowering this year’s tax." : "At this level, the added expenses mostly replace the simplified home office deduction instead of lowering this year’s tax.");
+  if(fa.carry > 0) parts.push(`${money(fa.carry)} of home office costs can’t be used this year and carries forward to 2027.`);
+  if(fa.lost > 0) parts.push(`${money(fa.lost)} of the simplified deduction is lost, since it can’t carry forward.`);
+  if(fa.schC < -1) parts.push(`The business shows a ${money(-fa.schC)} loss, which offsets your other income.`);
+  const na = parts.join(" ");
+  const room = HO.spaces[ho.space].sqft && f0.schC > 0 ? ` With your home office, the first ${money(f0.schC)} of added expenses lowers profit directly; beyond that, home office costs are limited to the profit that remains.` : "";
+  $("when-accel").textContent = (na ? na + " " : "") + `Expenses must be paid by December 31 and be for 2026 or no more than 12 months ahead.${room}`;
+  if(state.accel) state.solo = Math.min(state.solo, sMax);
+
+  setSlider("solo", state.solo, sMax);
+  const so = without("solo",0) - plan.total;
+  $("sv-solo").textContent = state.solo ? `Saves ${money(so)}` : "No change";
+  $("ct-solo").textContent = state.solo ? `All ${money(state.solo)} stays yours, invested for retirement. The contribution lowers income tax but not self-employment tax.` : "";
+  $("when-solo").textContent = `Maximum with the home office as described: ${money(sMax)}. A new solo 401(k) can be opened and funded for 2026 by April 15, 2027; if a plan already exists, the deferral election must be made by December 31.`;
+
+  const g = state.give, sg = without("give",0) - plan.total;
+  setSlider("give", g, 40000);
+  $("sv-give").textContent = g ? `Saves ${money(sg)}` : "No change";
+  const nextG = Math.round((plan.total - without("give", g+100))/100*100);
+  $("ct-give").textContent = g ? `That’s about ${Math.round(sg/g*100)}¢ of tax saved per dollar given, so the gifts cost you ${money(g-sg)} after tax. At this level, the next dollar given saves ${nextG}¢.` : "";
+  const noGift = calc(2026, data26({ ...state, give:0 }));
+  if(noGift.itemizes){
+    $("what-give").textContent = `You itemize with these settings, so gifts are deductible once they pass 0.5% of your income (about ${about(0.005*noGift.agi)}).`;
+  } else {
+    let t = 0; while(t <= 60000 && !calc(2026, data26({ ...state, give:t })).itemizes) t += 100;
+    $("what-give").textContent = `You take the standard deduction, which already covers up to $2,000 of cash gifts. Beyond that, gifts only lower your tax once total itemized deductions pass the standard deduction, at about ${about(t)} of giving. Giving two years’ worth in one year is one way to get there.`;
+  }
+
+  const saved = BASE.total - plan.total;
+  $("s-base").textContent = money(BASE.total);
+  $("s-plan").textContent = money(plan.total);
+  $("s-saved-label").textContent = saved < -0.5 ? "Tax added" : "Tax saved";
+  $("s-saved").textContent = money(Math.abs(saved));
+  $("s-spent").textContent = money(g + state.accel);
+  $("s-kept").textContent = money(state.spouse401 + state.solo);
+  $("s-note").textContent = Math.abs(saved) < 0.5 ? "Adjust an item to see how the bill changes."
+    : `Top bracket ${plan.rate!==BASE.rate?`moves from ${pct(BASE.rate)} to ${pct(plan.rate)}`:`stays at ${pct(plan.rate)}`}.`;
+  renderRuler(plan); renderPayments(plan); renderSteps(plan);
+}
+
+/* ---------- Payments ---------- */
+function renderPayments(plan){
+  const safe = 1.10*R25.total;
+  const q4 = Math.max(0, safe - PAID);
+  const balance = plan.total - PAID - q4;
+  const changed = Math.abs(plan.total - BASE.total) > 0.5;
+  $("ledger").innerHTML = `
+    <div class="row"><dt>2025 total federal tax</dt><dd class="num">${money(R25.total)}</dd></div>
+    <div class="row"><dt>Penalty-safe target<small>110% of last year’s tax, since 2025 income was over $150,000</small></dt><dd class="num">${money(safe)}</dd></div>
+    <div class="row"><dt>Paid or withheld by year end<small>${money(CLIENT.estimatesPaid)} in estimates plus ${money(CLIENT.withholding)} projected withholding</small></dt><dd class="num">${money(PAID)}</dd></div>
+    <div class="row key"><dt>Fourth-quarter estimate due January 15, 2027<small>The minimum that keeps you penalty-free</small></dt><dd class="num">${money(q4)}</dd></div>
+    <div class="row key"><dt>${balance>=0?"Balance due":"Expected refund"} April 15, 2027<small>${changed?"With your plan, ":"As projected, "}after paying the minimum above</small></dt><dd class="num">${money(Math.abs(balance))}</dd></div>`;
+}
+
+/* ---------- Next steps ---------- */
+function renderSteps(plan){
+  const dec = [];
+  if(state.spouse401) dec.push(`Ask payroll to raise your spouse’s 401(k) deferral so an additional ${money(state.spouse401)} comes out of the remaining paychecks.`);
+  if(state.accel) dec.push(`Pay ${money(state.accel)} of business expenses you’d have paid anyway, and keep the receipts.`);
+  if(state.solo) dec.push(`If you already have a solo 401(k), sign the deferral election for 2026. If not, decide which provider to use; the plan can be opened after year end.`);
+  if(state.give) dec.push(`Complete ${money(state.give)} in charitable gifts and keep the acknowledgment letters.`);
+  if(HO.spaces[ho.space].sqft) dec.push("Document the home office: measurements, a floor plan, and photos of the space as used for the business.");
+  dec.push("Send us any income or expenses that differ from this projection, so we can finalize the numbers.");
+  const q4 = Math.max(0, 1.10*R25.total - PAID);
+  const jan = [q4>0 ? `Pay the fourth-quarter federal estimate of ${money(q4)}.` : "No fourth-quarter estimate is needed to stay penalty-free."];
+  const apr = [];
+  if(state.solo) apr.push(`Fund the ${money(Math.min(state.solo, soloMax()))} solo 401(k) contribution. The profit-sharing portion can wait until an extended due date if you extend.`);
+  apr.push(`Individual return due, along with the remaining ${money(Math.max(0, plan.total - PAID - q4))}. An extension moves the filing date but not the payment date.`);
+  const item = (date, list) => `<li><span class="date">${date}</span><ul>${list.map(t=>`<li>${t}</li>`).join("")}</ul></li>`;
+  $("steps").innerHTML = item("By December 31, 2026", dec) + item("By January 15, 2027", jan) + item("By April 15, 2027", apr);
+}
+
+buildHomeOffice();
+buildLevers();
+refresh();
+
+</script>
 </body>
 </html>
